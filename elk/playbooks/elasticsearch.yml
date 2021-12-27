@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts : no
   vars:
-     elastic: elasticsearch-7.11.2-x86_64.rpm
+     elastic: elasticsearch-7.16.2-x86_64.rpm
      project_root: /root
   tasks:
     - get_url:
