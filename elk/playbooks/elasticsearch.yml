@@ -3,7 +3,7 @@
   gather_facts : no
   vars:
      elastic: elasticsearch-7.16.2-x86_64.rpm
-     project_root: /home/drone/elk
+     project_root: /home/drone
   tasks:
     - name: Create project root if it doesn\'t exist
       ansible.builtin.file: 
