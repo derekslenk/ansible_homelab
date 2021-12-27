@@ -14,7 +14,7 @@
       register: rpm_check
  
     - name: Install
-      ansible.builtin.shell: rpm -vi {{metricbeat}}
+      ansible.builtin.shell: rpm -vi {{project_root}}/{{metricbeat}}
       when: rpm_check.rc != 0
  
     - name: Enable and Start
