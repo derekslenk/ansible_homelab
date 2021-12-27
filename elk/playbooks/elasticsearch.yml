@@ -5,13 +5,15 @@
      elastic: elasticsearch-7.16.2-x86_64.rpm
      project_root: /home/drone
   tasks:
-    - name: Create project root if it doesn\'t exist
+    - name: Create project root if it doesn't exist
       ansible.builtin.file: 
         path: "{{project_root}}"
         state: directory
+
     - get_url:
         url="https://artifacts.elastic.co/downloads/elasticsearch/{{elastic}}"
         dest="{{project_root}}/{{elastic}}"
+
     - name: Check if Elastic is installed
       command: rpm -q elasticsearch
       ignore_errors: True
