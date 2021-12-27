@@ -1,5 +1,5 @@
 ---
-- include: nginx.yml
-- include: elasticsearch.yml
-- include: kibana.yml
-- include: metricbeat.yml
+- include: ./nginx.yml
+- include: ./elasticsearch.yml
+- include: ./kibana.yml
+- include: ./metricbeat.yml
