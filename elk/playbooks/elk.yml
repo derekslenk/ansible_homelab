@@ -1,5 +1,5 @@
 ---
-- include: ./nginx.yml
-- include: ./elasticsearch.yml
-- include: ./kibana.yml
-- include: ./metricbeat.yml
+- import_playbook: nginx.yml
+- import_playbook: elasticsearch.yml
+- import_playbook: kibana.yml
+- import_playbook: metricbeat.yml
