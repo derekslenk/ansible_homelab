@@ -3,7 +3,7 @@
   gather_facts : no
   vars:
      elastic: elasticsearch-7.16.2-x86_64.rpm
-     project_root: /root
+     project_root: /home/drone/elk
   tasks:
     - get_url:
         url="https://artifacts.elastic.co/downloads/elasticsearch/{{elastic}}"
