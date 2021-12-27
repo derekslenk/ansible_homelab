@@ -8,6 +8,7 @@
     - get_url:
         url="https://artifacts.elastic.co/downloads/kibana/{{kibana}}"
         dest="{{project_root}}/{{kibana}}"
+        
     - name: Check if Kibana is installed
       command: rpm -q kibana
       ignore_errors: True
