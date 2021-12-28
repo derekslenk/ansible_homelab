@@ -1,1 +1,1 @@
-*.htpasswd
+elk/files/usr/share/nginx/html/.htpasswd
